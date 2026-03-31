@@ -5,6 +5,8 @@ import com.pm.job_queues.model.Job;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.Set;
+
 @Component
 public class RedisJobQueue implements   JobQueue {
 
@@ -19,7 +21,9 @@ public class RedisJobQueue implements   JobQueue {
     public void enqueue(String queueName, Job job) {
         try {
             String json = objectMapper.writeValueAsString(job);
-            redisTemplate.opsForList().leftPush(queueName, json);
+            //score = priority
+            double score = job.getPriority().getValue();
+            redisTemplate.opsForZSet().add(queueName,json,score);
         } catch (Exception e) {
             throw new RuntimeException("Error adding job to queue", e);
         }
@@ -28,10 +32,14 @@ public class RedisJobQueue implements   JobQueue {
     @Override
     public Job dequeue(String queueName) {
         try {
-            String json = redisTemplate.opsForList().rightPop(queueName);
-            if (json == null) return null;
+            Set<String> jobs = redisTemplate.opsForZSet()
+                    .range(queueName, 0, 0);
+            if(jobs== null || jobs.isEmpty()) return null;
+            String jobJson = jobs.iterator().next();
 
-            return objectMapper.readValue(json, Job.class);
+            //Remove after fetching
+            redisTemplate.opsForZSet().remove(queueName,jobJson);
+            return objectMapper.readValue(jobJson, Job.class);
         } catch (Exception e) {
             throw new RuntimeException("Error reading job from queue", e);
         }

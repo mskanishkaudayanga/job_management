@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/factory/JobFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/JobQueuesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/controller/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/JobPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobPriority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/JobStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/worker/JobWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/worker/JobWorker.java" afterDir="false" />
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="create job ques as if failed then retry after max attept then goes to dlc">
+      <change afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job-queues-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +59,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;mskanishkaudayanga&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;mskanishkaudayanga&quot;
   }
 }</component>
@@ -88,6 +78,13 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -100,6 +97,7 @@
   "keyToString": {
     "Application.JobQueuesApplication.executor": "Run",
     "Application.JobQueusApplication.executor": "Run",
+    "Maven. [clean,install].executor": "Run",
     "Maven.Job_queues [clean,install].executor": "Run",
     "Maven.Job_queues [clean].executor": "Run",
     "Maven.Job_queues [compile].executor": "Run",
@@ -108,7 +106,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "over-upto-main-remove",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mskan/Desktop/Job Queues",
@@ -144,6 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobQueueSpringBootStarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="job-queue-spring-boot-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.jobqueuespringbootstarter.JobQueueSpringBootStarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JobQueuesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Job_queues" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.job_queues.JobQueuesApplication" />
@@ -153,6 +158,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.JobQueuesApplication" />
+      <item itemvalue="Spring Boot.JobQueueSpringBootStarterApplication" />
       <item itemvalue="Spring Boot.JobQueuesApplication" />
     </list>
     <recent_temporary>
@@ -177,12 +183,25 @@
       <option name="presentableId" value="Default" />
       <updated>1774861595153</updated>
       <workItem from="1774861596495" duration="11661000" />
-      <workItem from="1774948838746" duration="5669000" />
+      <workItem from="1774948838746" duration="14151000" />
     </task>
+    <task id="LOCAL-00001" summary="create job ques as if failed then retry after max attept then goes to dlc">
+      <option name="closed" value="true" />
+      <created>1774955915249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774955915249</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create job ques as if failed then retry after max attept then goes to dlc" />
+    <option name="LAST_COMMIT_MESSAGE" value="create job ques as if failed then retry after max attept then goes to dlc" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
