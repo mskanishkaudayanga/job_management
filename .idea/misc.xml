@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/Job_queues/pom.xml" />
         <option value="$PROJECT_DIR$/Job-queues-core/job-queue-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/Job-queues-core/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

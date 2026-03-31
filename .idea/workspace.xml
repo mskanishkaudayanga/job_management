@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="create job ques as if failed then retry after max attept then goes to dlc">
-      <change afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/Enums/JobPriority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobPriority.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/Enums/JobStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/JobQueuesApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/controller/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/factory/JobFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/factory/JobFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/JobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/handlers/JobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/NotificationJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/handlers/NotificationJobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/model/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/JobQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/queue/JobQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/worker/JobWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/worker/JobWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job_queues/src/test/java/com/pm/job_queues/JobQueuesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/test/java/com/pm/job_queues/JobQueuesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job-queues-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +58,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "assignee": "mskanishkaudayanga"
+      &quot;assignee&quot;: &quot;mskanishkaudayanga&quot;
     }
   ],
-  "lastFilter": {
-    "assignee": "mskanishkaudayanga"
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;mskanishkaudayanga&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mskanishkaudayanga/job_management.git&quot;,
@@ -99,6 +78,13 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -111,6 +97,7 @@
   "keyToString": {
     "Application.JobQueuesApplication.executor": "Run",
     "Application.JobQueusApplication.executor": "Run",
+    "Maven. [clean,install].executor": "Run",
     "Maven.Job_queues [clean,install].executor": "Run",
     "Maven.Job_queues [clean].executor": "Run",
     "Maven.Job_queues [compile].executor": "Run",
@@ -119,7 +106,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "over-upto-main-remove",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mskan/Desktop/Job Queues",
