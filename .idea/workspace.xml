@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="" />
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/factory/JobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/JobQueuesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/controller/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/JobPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobPriority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/model/JobStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/Enums/JobStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/worker/JobWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job_queues/src/main/java/com/pm/job_queues/worker/JobWorker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/mskan/Desktop/Job Queues" value="3BetvcrHBCMPqLHp86bxhh90BlH" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+    <option name="inlineChatModeId" value="Ask" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/job_Queus">
@@ -41,13 +69,28 @@
       </list>
     </option>
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mskanishkaudayanga&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mskanishkaudayanga/job_management.git&quot;,
+    &quot;accountId&quot;: &quot;93827af0-35e1-479a-83ee-2917b1ca7a61&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3BetvcrHBCMPqLHp86bxhh90BlH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -63,6 +106,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mskan/Desktop/Job Queues",
@@ -74,6 +120,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
@@ -127,7 +176,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774861595153</updated>
-      <workItem from="1774861596495" duration="7857000" />
+      <workItem from="1774861596495" duration="11661000" />
+      <workItem from="1774948838746" duration="5669000" />
     </task>
     <servers />
   </component>

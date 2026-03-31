@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 public class EmailJobHandler implements  JobHandler{
     @Override
     public void handle(Job job) {
-        System.out.println("📧 Sending EMAIL: " + job.getPayload());
+        throw new RuntimeException("Not supported yet.");
+
     }
 }

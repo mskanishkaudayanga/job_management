@@ -1,39 +1,25 @@
 package com.pm.job_queues.model;
 
+import com.pm.job_queues.Enums.JobPriority;
+import com.pm.job_queues.Enums.JobStatus;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
+@Builder
 public class Job {
-    @Getter
-    @Setter
     private String id;            // Unique job ID
-
-    @Getter
-    @Setter
     private String type;          // email, sms, file, etc.
-
-    @Getter
-    @Setter
     private String payload;       // JSON data (job input)
-
-    @Setter
-    @Getter
     private JobStatus status;     // PENDING, SUCCESS, FAILED
-
-    @Getter
-    @Setter
     private JobPriority priority; // LOW, MEDIUM, HIGH
-
-    @Getter
-    @Setter
     private int retryCount;       // How many retries done
-
     private int maxRetries;       // Max retry limit
-
-    private long createdAt;       // timestamp
-
-    private long updatedAt;       // timestamp
+    private LocalDateTime createdAt;       // timestamp
+    private LocalDateTime updatedAt;       // timestamp
 
 }

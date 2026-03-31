@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
 public class RedisJobQueue implements   JobQueue {
 
     private final StringRedisTemplate redisTemplate;
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper;
 
-    public RedisJobQueue(StringRedisTemplate redisTemplate) {
+    public RedisJobQueue(StringRedisTemplate redisTemplate, ObjectMapper objectMapper) {
         this.redisTemplate = redisTemplate;
+        this.objectMapper = objectMapper;
     }
     @Override
     public void enqueue(String queueName, Job job) {

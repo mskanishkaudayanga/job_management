@@ -1,4 +1,4 @@
-package com.pm.job_queues.model;
+package com.pm.job_queues.Enums;
 
 public enum JobPriority {
     LOW,
