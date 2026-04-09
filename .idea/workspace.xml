@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="create job ques as if failed then retry after max attept then goes to dlc">
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="Dockerize system">
       <change afterPath="$PROJECT_DIR$/Job-queues-core/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Job-queues-core/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Job-queues-core/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Job-queues-core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Job-queues-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +204,7 @@
       <workItem from="1774861596495" duration="11661000" />
       <workItem from="1774948838746" duration="14151000" />
       <workItem from="1775629671647" duration="7496000" />
-      <workItem from="1775757852871" duration="24000" />
+      <workItem from="1775757852871" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="create job ques as if failed then retry after max attept then goes to dlc">
       <option name="closed" value="true" />
@@ -217,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774955915249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dockerize system">
+      <option name="closed" value="true" />
+      <created>1775757928986</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775757928986</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +230,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create job ques as if failed then retry after max attept then goes to dlc" />
-    <option name="LAST_COMMIT_MESSAGE" value="create job ques as if failed then retry after max attept then goes to dlc" />
+    <MESSAGE value="Dockerize system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerize system" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
