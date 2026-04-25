@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="docker compose">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job-queues-core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.gitignore" afterDir="false" />
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="directory change">
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/Enums/JobPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/Enums/JobStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/controller/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/factory/JobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/JobHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/NotificationJobHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/model/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/queue/JobQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/worker/JobWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pm/job_queues/JobQueuesApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +122,7 @@
     &quot;Application.JobQueuesApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.JobQueusApplication.executor&quot;: &quot;Run&quot;,
     &quot;Docker.Job-queues-core: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Job_queues [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Job_queues [clean].executor&quot;: &quot;Run&quot;,
@@ -129,7 +154,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Job-queues-core: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="JobQueuesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pm.job_queues.JobQueuesApplication" />
       <module name="Job_queues" />
@@ -171,14 +196,24 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.JobQueuesApplication" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.Job-queues-core: Compose Deployment" />
       <item itemvalue="Spring Boot.JobQueueSpringBootStarterApplication" />
       <item itemvalue="Spring Boot.JobQueuesApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Job-queues-core: Compose Deployment" />
         <item itemvalue="Application.JobQueuesApplication" />
       </list>
@@ -229,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775758532396</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="directory change">
+      <option name="closed" value="true" />
+      <created>1777110367558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777110367558</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +282,8 @@
     <MESSAGE value="create job ques as if failed then retry after max attept then goes to dlc" />
     <MESSAGE value="Dockerize system" />
     <MESSAGE value="docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker compose" />
+    <MESSAGE value="directory change" />
+    <option name="LAST_COMMIT_MESSAGE" value="directory change" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
