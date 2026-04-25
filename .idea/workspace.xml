@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="create job ques as if failed then retry after max attept then goes to dlc">
-      <change afterPath="$PROJECT_DIR$/Job-queues-core/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Job-queues-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/pom.xml" afterDir="false" />
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="docker compose">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Job-queues-core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Job-queues-core/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_C:/Users/mskan/Desktop/Job Queues" value="3BetvcrHBCMPqLHp86bxhh90BlH" />
+      <entry key="_C:/Users/mskan/Desktop/Job Queues/Job-queues-core" value="3C40l7K21oEahwP834Z1bLrrqga" />
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedChatMode">
@@ -52,6 +51,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -93,31 +93,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.JobQueuesApplication.executor": "Run",
-    "Application.JobQueusApplication.executor": "Run",
-    "Maven. [clean,install].executor": "Run",
-    "Maven.Job_queues [clean,install].executor": "Run",
-    "Maven.Job_queues [clean].executor": "Run",
-    "Maven.Job_queues [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "over-upto-main-remove",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mskan/Desktop/Job Queues",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.JobQueuesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JobQueusApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Job-queues-core: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_queues [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_queues [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_queues [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;over-upto-main-remove&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mskan/Desktop/Job Queues&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -128,7 +129,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.JobQueuesApplication">
+  <component name="RunManager" selected="Docker.Job-queues-core: Compose Deployment">
     <configuration name="JobQueuesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pm.job_queues.JobQueuesApplication" />
       <module name="Job_queues" />
@@ -156,13 +157,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Job-queues-core: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Job-queues-core/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.JobQueuesApplication" />
+      <item itemvalue="Docker.Job-queues-core: Compose Deployment" />
       <item itemvalue="Spring Boot.JobQueueSpringBootStarterApplication" />
       <item itemvalue="Spring Boot.JobQueuesApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Job-queues-core: Compose Deployment" />
         <item itemvalue="Application.JobQueuesApplication" />
       </list>
     </recent_temporary>
@@ -184,6 +201,9 @@
       <updated>1774861595153</updated>
       <workItem from="1774861596495" duration="11661000" />
       <workItem from="1774948838746" duration="14151000" />
+      <workItem from="1775629671647" duration="7496000" />
+      <workItem from="1775757852871" duration="3789000" />
+      <workItem from="1775844860832" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="create job ques as if failed then retry after max attept then goes to dlc">
       <option name="closed" value="true" />
@@ -193,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774955915249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dockerize system">
+      <option name="closed" value="true" />
+      <created>1775757928986</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775757928986</updated>
+    </task>
+    <task id="LOCAL-00003" summary="docker compose">
+      <option name="closed" value="true" />
+      <created>1775758532396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775758532396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +237,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create job ques as if failed then retry after max attept then goes to dlc" />
-    <option name="LAST_COMMIT_MESSAGE" value="create job ques as if failed then retry after max attept then goes to dlc" />
+    <MESSAGE value="Dockerize system" />
+    <MESSAGE value="docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker compose" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
