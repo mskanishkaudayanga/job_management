@@ -66,15 +66,13 @@ pipeline {
 
                     stage('Deploy to EC2') {
                         steps {
-                            sshagent(['ec2-ssh-key']) {
-                                bat """
-                                ssh -o StrictHostKeyChecking=no ubuntu@<EC2-IP> ^
-                                "docker pull ${IMAGE_NAME}:latest && ^
-                                docker stop app || true && ^
-                                docker rm app || true && ^
-                                docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
-                                """
-                            }
+                            bat """
+                            ssh -i C:\\keys\\job-queues.pem ubuntu@<EC2-IP> ^
+                            "docker pull ${IMAGE_NAME}:latest && ^
+                            docker stop app || true && ^
+                            docker rm app || true && ^
+                            docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
+                            """
                         }
                     }
 
