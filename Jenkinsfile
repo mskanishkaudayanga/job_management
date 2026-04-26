@@ -64,17 +64,17 @@ pipeline {
                         }
                     }
 
-                    stage('Deploy to EC2') {
-                        steps {
-                            bat """
-                            ssh -i C:\\keys\\job-queues.pem ubuntu@<EC2-IP> ^
-                            "docker pull ${IMAGE_NAME}:latest && ^
-                            docker stop app || true && ^
-                            docker rm app || true && ^
-                            docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
-                            """
-                        }
-                    }
+                   stage('Deploy to EC2') {
+                       steps {
+                           bat """
+                           ssh -o StrictHostKeyChecking=no -i C:\\keys\\spring-job.pem ubuntu@<EC2-IP> ^
+                           "docker pull ${IMAGE_NAME}:latest && ^
+                           docker stop app || true && ^
+                           docker rm app || true && ^
+                           docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
+                           """
+                       }
+                   }
 
     }
 }
