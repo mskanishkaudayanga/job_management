@@ -29,14 +29,7 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                script {
-                    docker.build("${IMAGE_NAME}:${VERSION}")
-                    docker.build("${IMAGE_NAME}:latest")
-                }
-            }
-        }
+
 
 //         stage('Docker Login') {
 //             steps {
@@ -58,16 +51,32 @@ pipeline {
 //                 """
 //             }
 //         }
-            stage('Docker Login & Push') {
-                steps {
-                    script {
-                        docker.withRegistry('https://registry.hub.docker.com', DOCKERHUB_CREDS) {
-                            def app = docker.build("${IMAGE_NAME}:${VERSION}")
-                            app.push()
-                            app.push("latest")
+
+            stage('Docker Build & Push') {
+                        steps {
+                            script {
+                                docker.withRegistry('https://registry.hub.docker.com', DOCKERHUB_CREDS) {
+                                    def app = docker.build("${IMAGE_NAME}:${VERSION}")
+                                    app.push()
+                                    app.push("latest")
+                                }
+                            }
                         }
                     }
-                }
-            }
+
+                    stage('Deploy to EC2') {
+                        steps {
+                            sshagent(['ec2-ssh-key']) {
+                                bat """
+                                ssh -o StrictHostKeyChecking=no ubuntu@<EC2-IP> ^
+                                "docker pull ${IMAGE_NAME}:latest && ^
+                                docker stop app || true && ^
+                                docker rm app || true && ^
+                                docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
+                                """
+                            }
+                        }
+                    }
+
     }
 }
