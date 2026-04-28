@@ -75,13 +75,19 @@ pipeline {
 //                            """
 //                        }
 //                    }
-                       stage('Deploy to EC2') {
-                           steps {
+                   stage('Deploy to EC2') {
+                       steps {
+                           sshagent(['ec2-ssh-key']) {
                                bat """
-                               ssh -o StrictHostKeyChecking=no -i C:/keys/spring-job.pem ubuntu@54.160.61.4 "docker pull ${IMAGE_NAME}:latest && docker stop app || echo stopped && docker rm app || echo removed && docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
+                               ssh -o StrictHostKeyChecking=no ubuntu@54.160.61.4 ^
+                               "docker pull ${IMAGE_NAME}:latest && ^
+                               docker stop app || true && ^
+                               docker rm app || true && ^
+                               docker run -d -p 8080:8080 --name app ${IMAGE_NAME}:latest"
                                """
                            }
                        }
+                   }
 
     }
 }
