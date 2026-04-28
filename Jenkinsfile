@@ -67,7 +67,7 @@ pipeline {
                    stage('Deploy to EC2') {
                        steps {
                            bat """
-                           ssh -o StrictHostKeyChecking=no -i C:\\keys\\spring-job.pem ubuntu@<EC2-IP> ^
+                           ssh -o StrictHostKeyChecking=no -i C:\\keys\\spring-job.pem ubuntu@54.160.61.4 ^
                            "docker pull ${IMAGE_NAME}:latest && ^
                            docker stop app || true && ^
                            docker rm app || true && ^
