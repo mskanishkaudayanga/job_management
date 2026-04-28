@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="directory change">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/Enums/JobPriority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/Enums/JobStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/JobQueuesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/annotation/AsyncJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/aspect/AsyncJobAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/controller/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/factory/JobFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/EmailJobHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/JobHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/handlers/NotificationJobHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/queue/JobQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/queue/RedisJobQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pm/job_queues/worker/JobWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pm/job_queues/JobQueuesApplicationTests.java" afterDir="false" />
+    <list default="true" id="21bb69eb-8e85-400a-ab24-d68e57c22b0c" name="Changes" comment="change jenkings file 4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +215,7 @@
       <workItem from="1775629671647" duration="7496000" />
       <workItem from="1775757852871" duration="3789000" />
       <workItem from="1775844860832" duration="354000" />
+      <workItem from="1777363427641" duration="4202000" />
     </task>
     <task id="LOCAL-00001" summary="create job ques as if failed then retry after max attept then goes to dlc">
       <option name="closed" value="true" />
@@ -272,7 +249,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777110367558</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change jenkings file 3">
+      <option name="closed" value="true" />
+      <created>1777216711101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777216711101</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change jenkings file 4">
+      <option name="closed" value="true" />
+      <created>1777366271696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777366271696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +276,9 @@
     <MESSAGE value="Dockerize system" />
     <MESSAGE value="docker compose" />
     <MESSAGE value="directory change" />
-    <option name="LAST_COMMIT_MESSAGE" value="directory change" />
+    <MESSAGE value="change jenkings file 3" />
+    <MESSAGE value="change jenkings file 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="change jenkings file 4" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
